@@ -1,4 +1,4 @@
-package com.kingston.koratuwa.service.user;
+package com.kingston.koratuwa.service;
 
 import com.kingston.koratuwa.dto.request.user.UserLoginRequest;
 import com.kingston.koratuwa.dto.request.user.UserRegisterRequest;

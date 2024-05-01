@@ -1,7 +1,7 @@
-package com.kingston.koratuwa.entity.user;
+package com.kingston.koratuwa.entity;
 
-import com.kingston.koratuwa.entity.user.enums.Role;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.kingston.koratuwa.enums.Role;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,13 +19,12 @@ import java.util.Collections;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "user")
-public class UserBean implements UserDetails {
+@Table(name = "farmer")
+public class FarmerBean implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String firstName;
-    private String lastName;
+    private String name;
     @Column(unique = true)
     private String userName;
     @Column(unique = true)

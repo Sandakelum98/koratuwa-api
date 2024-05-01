@@ -2,7 +2,7 @@ package com.kingston.koratuwa.controller;
 
 import com.kingston.koratuwa.dto.request.user.UserLoginRequest;
 import com.kingston.koratuwa.dto.request.user.UserRegisterRequest;
-import com.kingston.koratuwa.service.user.UserService;
+import com.kingston.koratuwa.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

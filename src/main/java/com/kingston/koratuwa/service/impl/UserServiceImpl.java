@@ -5,9 +5,9 @@ import com.kingston.koratuwa.dto.request.user.UserLoginRequest;
 import com.kingston.koratuwa.dto.request.user.UserRegisterRequest;
 import com.kingston.koratuwa.dto.response.user.UserRegisterResponse;
 import com.kingston.koratuwa.constants.Constants;
-import com.kingston.koratuwa.entity.user.UserBean;
-import com.kingston.koratuwa.repo.user.UserRepo;
-import com.kingston.koratuwa.service.user.UserService;
+import com.kingston.koratuwa.entity.UserBean;
+import com.kingston.koratuwa.repo.UserRepo;
+import com.kingston.koratuwa.service.UserService;
 import com.kingston.koratuwa.utility.ResponseWrapper;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
@@ -24,7 +24,7 @@ import org.springframework.dao.DataIntegrityViolationException;
 
 import javax.servlet.http.HttpServletRequest;
 
-import static com.kingston.koratuwa.entity.user.enums.RoleUtils.getRoleFromInt;
+import static com.kingston.koratuwa.enums.RoleUtils.getRoleFromInt;
 
 
 @Service

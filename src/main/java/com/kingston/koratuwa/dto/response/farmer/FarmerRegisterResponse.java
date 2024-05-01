@@ -1,5 +1,6 @@
-package com.kingston.koratuwa.dto.response.user;
+package com.kingston.koratuwa.dto.response.farmer;
 
+import com.kingston.koratuwa.entity.FarmerBean;
 import com.kingston.koratuwa.entity.UserBean;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -10,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserRegisterResponse {
+public class FarmerRegisterResponse {
     private UserBean user;
     private String token;
 }

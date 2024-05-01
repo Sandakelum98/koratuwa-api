@@ -1,6 +1,6 @@
 package com.kingston.koratuwa.config;
 
-import com.kingston.koratuwa.repo.user.UserRepo;
+import com.kingston.koratuwa.repo.UserRepo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

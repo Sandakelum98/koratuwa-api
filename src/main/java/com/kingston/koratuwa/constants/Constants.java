@@ -14,6 +14,7 @@ public class Constants {
     public static final String TOKEN_EXPIRED = "Token expired";
     public static final String INVALID_TOKEN_SIGNATURE = "Invalid token signature";
     public static final String INVALID_JWT_TOKEN = "Invalid jwt token";
+    public static final String INVALID_REQUEST_BODY = "Invalid request body";
 
 
     public static final String INTERNAL_SERVER_ERROR = "Internal server error";
