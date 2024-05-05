@@ -35,6 +35,9 @@ public class UserBean implements UserDetails {
     @Enumerated(EnumType.STRING)
     private Role role;
 
+    public UserBean(Integer id) {
+    }
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return Collections.singletonList(new SimpleGrantedAuthority(role.name()));

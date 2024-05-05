@@ -1,6 +1,5 @@
 package com.kingston.koratuwa.dto.response.farmer;
 
-import com.kingston.koratuwa.entity.FarmerBean;
 import com.kingston.koratuwa.entity.UserBean;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

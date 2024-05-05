@@ -2,10 +2,7 @@ package com.kingston.koratuwa.controller;
 
 import com.kingston.koratuwa.dto.request.farmer.FarmerLoginRequest;
 import com.kingston.koratuwa.dto.request.farmer.FarmerRegisterRequest;
-import com.kingston.koratuwa.dto.request.user.UserLoginRequest;
-import com.kingston.koratuwa.dto.request.user.UserRegisterRequest;
 import com.kingston.koratuwa.service.FarmerService;
-import com.kingston.koratuwa.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -33,9 +30,16 @@ public class FarmerController {
         return farmerService.login(request, farmerLoginRequest);
     }
 
+    @GetMapping("/get-farmer-by-id/{farmerId}")
+    public ResponseEntity getFarmerById(HttpServletRequest request,
+                                        @PathVariable Integer farmerId) {
+        System.out.println("getFarmerById - controller");
+        return farmerService.getFarmerById(request, farmerId);
+    }
+
     @PostMapping("/update")
     public ResponseEntity update(HttpServletRequest request,
-                                @RequestBody FarmerRegisterRequest registerRequest) {
+                                 @RequestBody FarmerRegisterRequest registerRequest) {
         return farmerService.update(request, registerRequest);
     }
 
